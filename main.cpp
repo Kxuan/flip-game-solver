@@ -183,7 +183,7 @@ int main(int argc, const char *argv[])
         cerr << "too large" << endl;
         return 1;
     }
-    BaseMap *m = solvers[argc];
+    BaseMap *m = solvers[argc-1];
     if (m == nullptr) {
         cerr << "invalid map size" << endl;
         return 1;
